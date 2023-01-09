@@ -1,7 +1,7 @@
 const { log } = require('console');
 const http = require('http')
 
-http.createServer((request, response) => {
+const server = http.createServer((request, response) => {
 
     if (request.url === '/usiel') {
         response.write('Usiel online');
@@ -18,5 +18,6 @@ http.createServer((request, response) => {
     `);
     response.end();
 
-}).listen(3000)
+})
+server.listen(3000)
 console.log('servidor escuchando en el puerto 3000');
