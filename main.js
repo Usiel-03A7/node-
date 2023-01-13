@@ -1,4 +1,4 @@
-const matematicas = require('./math/index')
+const matematicas = require('./math')
 
 console.log(matematicas.add(10,20));
 console.log(matematicas.substrack(10,20));
